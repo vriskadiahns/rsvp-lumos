@@ -1,0 +1,158 @@
+:root {
+  --GriffindorDarkRed: #740001;
+  --GriffindorRed: #ae0001;
+  --GriffindorYellow: #eeba30;
+  --GriffinidorGold: #d3a625;
+  --SlytherinDarkGreen: #1a472a;
+  --SlytherinGreen: #2a623d;
+  --SlytherinDarkSilver: #5a5a5a;
+  --SlytherinLightSilver: #aaaaaa;
+  --RavenclawDarkBlue: #0e1a40;
+  --RavenclawBlue: #222f5b;
+  --RavenclawTheGreyLady: #bebebe;
+  --RavenclawGold: #946b2d;
+  --HufflepuffCanary: #eeb939;
+  --HufflepuffLlightCanary: #f0c75c;
+  --HufflepuffLightBrown: #726255;
+  --HufflepuffDarkBrown: #372e29;
+
+  --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+}
+
+@font-face {
+    font-family: 'Harry Potter';
+    src: url('font/HARRYP__.TTF') format('truetype');
+}
+
+body {
+    font-family:"Harry Potter"; 
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    color: var(--HufflepuffDarkBrown);
+  }
+  
+  .hero {
+    background: url('background/desktop.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: top;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 150px;
+        color: var(--HufflepuffDarkBrown);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    color: var(--HufflepuffDarkBrown);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 200px;
+    padding: 6px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #372e29;
+    color: white;
+  }
+  
+  input[type="submit"] {
+    background-color: #740001;
+    color: #eeb939;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Harry Potter", sans-serif;
+    font-size: 24px;
+    width: 100px;
+    transition: background-color 0.3s;
+    position: relative;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #eeb939;
+    color: #740001;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 24px;
+    color: var(--HufflepuffDarkBrown);
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 24px;
+      overflow-y: scroll;
+    }
+
+    .hero {
+      background: url('background/mobile.png') no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: top;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: scroll;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 16px;
+      color: var(--HufflepuffDarkBrown);
+    }
+
+    form {
+      max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea,
+    input[type="submit"] {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
