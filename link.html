@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styleLink.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>psdm-lumos</title>
+  <link rel="preload" as="image" href="background/desktop.png">
+  <link rel="preload" as="image" href="background/mobile.png">
+</head>
+<body>
+
+  <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+    <form action="pcs.php" method="post">
+      <h2 style="text-align: center;">LUMOS!</h2>
+
+      <label for="nama">NAMA</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="NIM">NIM</label>
+      <input type="text" id="NIM" name="NIM" required>
+
+      <label for="Prodi">PRODI</label>
+      <select id="Prodi" name="Prodi" required>
+        <option value="" disabled selected></option>
+        <option value="Informatika">Informatika</option>
+        <option value="Sains Data">Sains Data</option>
+      </select>
+
+      <label for="Angkatan">ANGKATAN</label>
+      <select id="Angkatan" name="Angkatan" required>
+        <option value="" disabled selected></option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+
+      <label for="kehadiran">KONFIRMASI KEHADIRAN</label>
+      <select id="kehadiran" name="kehadiran" required>
+        <option value="" disabled selected></option>
+        <option value="hadir">Hadir</option>
+        <option value="tidak_hadir">Tidak Hadir</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+
+  </section>
+
+</body>
+</html>
