@@ -1,0 +1,143 @@
+:root {
+    --GriffindorDarkRed: #740001;
+    --GriffindorRed: #ae0001;
+    --GriffindorYellow: #eeba30;
+    --GriffinidorGold: #d3a625;
+    --SlytherinDarkGreen: #1a472a;
+    --SlytherinGreen: #2a623d;
+    --SlytherinDarkSilver: #5a5a5a;
+    --SlytherinLightSilver: #aaaaaa;
+    --RavenclawDarkBlue: #0e1a40;
+    --RavenclawBlue: #222f5b;
+    --RavenclawTheGreyLady: #bebebe;
+    --RavenclawGold: #946b2d;
+    --HufflepuffCanary: #eeb939;
+    --HufflepuffLlightCanary: #f0c75c;
+    --HufflepuffLightBrown: #726255;
+    --HufflepuffDarkBrown: #372e29;
+
+    --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+}
+
+@font-face {
+    font-family: 'Harry Potter';
+    src: url('font/HARRYP__.TTF') format('truetype');
+}
+
+body {
+    font-size: 10px;
+    font-family: "Harry Potter", cursive;
+    color: var(--HufflepuffDarkBrown);
+}
+
+.hero {
+    background: url('background/desktop.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: top;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+}
+
+.hero h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: var(--HufflepuffDarkBrown);
+}
+
+.hero h2 {
+    font-size: 65px;
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+    color: var(--HufflepuffDarkBrown);
+}
+
+.hero div {
+    font-size: 6.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 5rem;
+}
+
+.hero h5 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: var(--HufflepuffDarkBrown);
+}
+
+.hero a {
+    font-size: 35px;
+    color: var(--GriffindorRed);
+    margin-top: 10px;
+}
+
+.hero a:hover {
+    color: var(--GriffinidorGold);
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        background: url('background/mobile.png') no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: top;
+        color: var(--HufflepuffDarkBrown);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        margin-top: 80px;
+        color: var(--HufflepuffDarkBrown);
+    }
+
+    .hero h2 {
+        font-size: 80px;
+        margin-top: 160px;
+        color: var(--HufflepuffDarkBrown);
+    }
+    .hero div {
+        font-size: 64px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .hero p {
+        font-size: 32px;
+        color: var(--HufflepuffDarkBrown);
+    }
+
+    .hero h5 {
+        font-size: 28px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        color: var(--HufflepuffDarkBrown);
+    }
+
+    .hero a {
+        font-size: 25px;
+        margin-top: 16px;
+    }
+}
